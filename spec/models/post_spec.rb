@@ -1,5 +1,5 @@
 require 'rails_helper'
- 
+
 describe Post do
     it 'can be created' do
       post = Post.create!(title: "My title", description: "The post description")
@@ -11,4 +11,3 @@ describe Post do
     expect(post.post_summary).to eq("My title - The post description")
   end
 end
- 
